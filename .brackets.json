@@ -1,0 +1,9 @@
+{
+    "phonegapcodehints.detectedExclusions": [
+        "/Users/ryan/Desktop/School Work/Third Semester/HTML App Dev/BookBuddy/www/js/app.js",
+        "/Users/ryan/Desktop/School Work/Third Semester/HTML App Dev/BookBuddy/www/lib/ionic/js/ionic.min.js"
+    ],
+    "jscodehints.detectedExclusions": [
+        "/Users/ryan/Desktop/School Work/Third Semester/HTML App Dev/BookBuddy/platforms/ios/www/plugins/ionic-plugin-keyboard/www/ios/keyboard.js"
+    ]
+}

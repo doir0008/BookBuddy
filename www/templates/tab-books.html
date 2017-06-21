@@ -1,0 +1,20 @@
+<ion-view view-title="Search for Books">
+    <ion-content class="padding">
+        <ion-refresher on-refresh="refresh(value)"></ion-refresher>
+        <div class="list list-inset">
+            <label class="item item-input">
+				<i class="icon ion-search placeholder-icon"></i>
+				<input placeholder="Search for books" ng-model="value.query" type="search"/>
+			</label>
+            <input type="button" class="button button-block button-positive" ng-click="bookSearch(value)" value="Search"/>
+        </div>
+        <div class="list" on-swipe-left="onSwipeLeft()" on-swipe-right="onSwipeRight()">
+            <a ui-sref="tab.books-detail({itemId: item.best_book.id.__text})" ng-repeat="item in searchResults" class="item item-thumbnail-left">
+                <img ng-src="{{item.best_book.small_image_url}}">
+                <h2>{{item.best_book.title}}</h2>
+                <p>Rating: {{item.average_rating}}</p>
+                <button class="button button-small button-positive">More Details</button>
+            </a>
+        </div>
+    </ion-content>
+</ion-view>
